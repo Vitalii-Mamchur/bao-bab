@@ -233,7 +233,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 3% 5%;
-  background: url('../img/bg8.png') no-repeat;
+  background: url('./img/bg8.png') no-repeat;
   background-size: cover;
   background-position: center;
 }
