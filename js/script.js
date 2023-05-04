@@ -20,17 +20,11 @@ window.onscroll = () => {
       //active navbar links
       navLinks.forEach((link) => {
         link.classList.remove('active');
-        document
-          .querySelector('header nav a[href*=' + id + ']')
-          .classList.add('active');
+        link.classList &&
+          document
+            .querySelector('header nav a[href*=' + id + ']')
+            .classList.add('active');
       });
-
-      // active sections for animation on scroll
-      section.classList.add('show-animate');
-    }
-    // if want to use animation that repeats on scroll use this
-    else {
-      section.classList.remove('show-animate');
     }
   });
 
